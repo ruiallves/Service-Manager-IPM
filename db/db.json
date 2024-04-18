@@ -1,0 +1,518 @@
+{
+  "services": [
+    {
+      "id": "sp",
+      "description": "Substituir pneus",
+      "duration": 40
+    },
+    {
+      "id": "cr",
+      "description": "Calibrar rodas",
+      "duration": 20
+    },
+    {
+      "id": "ad",
+      "description": "Alinhar direção",
+      "duration": 30
+    },
+    {
+      "id": "sct",
+      "description": "Subsituir calços",
+      "duration": 60
+    },
+    {
+      "id": "mot",
+      "description": "Mudar óleo travões",
+      "duration": 20
+    },
+    {
+      "id": "li",
+      "description": "Limpeza interior",
+      "duration": 120
+    },
+    {
+      "id": "le",
+      "description": "Limpeza exterior",
+      "duration": 30
+    },
+    {
+      "id": "sfah",
+      "description": "Substituir filtro da água",
+      "duration": 30
+    },
+    {
+      "id": "mom",
+      "description": "Mudar óleo motor",
+      "duration": 10
+    },
+    {
+      "id": "sfo",
+      "description": "Substituir filtro óleo",
+      "duration": 20
+    },
+    {
+      "id": "sfc",
+      "description": "Substituir filtro combustível",
+      "duration": 30
+    },
+    {
+      "id": "sfam",
+      "description": "Substituir filtro ar",
+      "duration": 30
+    },
+    {
+      "id": "scc",
+      "description": "Substituir conversor",
+      "duration": 30
+    },
+    {
+      "id": "sba",
+      "description": "Substituir bateria",
+      "duration": 30
+    },
+    {
+      "id": "svi",
+      "description": "Substituir velas",
+      "duration": 30
+    },
+    {
+      "id": "sfp",
+      "description": "Substituir filtro de partículas",
+      "duration": 30
+    },
+    {
+      "id": "rfp",
+      "description": "Regenerar filtro de partículas",
+      "duration": 30
+    },
+    {
+      "id": "sva",
+      "description": "Substituir válvula",
+      "duration": 30
+    },
+    {
+      "id": "adb",
+      "description": "Avaliar desempenho",
+      "duration": 30
+    },
+    {
+      "id": "sb",
+      "description": "Substituir bateria",
+      "duration": 20
+    }
+  ],
+  "types": [
+    {
+      "id": "Gasolina",
+      "services": [
+        "sp",
+        "cr",
+        "ad",
+        "sct",
+        "mot"
+      ]
+    },
+    {
+      "id": "Gasoleo",
+      "services": [
+        "li",
+        "le",
+        "sfah",
+        "mom",
+        "sfo"
+      ]
+    },
+    {
+      "id": "Eletrico",
+      "services": [
+        "sfc",
+        "sfam",
+        "scc",
+        "sba",
+        "svi"
+      ]
+    },
+    {
+      "id": "Hibrido",
+      "services": [
+        "sfp",
+        "rfp",
+        "sva",
+        "svi",
+        "adb",
+        "sb"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": "123",
+      "name": "João Silva",
+      "email": "js@imail.com",
+      "phone": "912345678",
+      "photo": "assets/clientes/joao.png"
+    },
+    {
+      "id": "124",
+      "name": "Marco Santos",
+      "email": "jms@imail.com",
+      "phone": "912345679",
+      "photo": "assets/clientes/marco.png"
+    },
+    {
+      "id": "125",
+      "name": "José Pereira",
+      "email": "jp@imail.com",
+      "phone": "912345680",
+      "photo": "assets/clientes/jose.png"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "08-25-AA",
+      "clientId": "123",
+      "type": "Gasolina",
+      "power": 350,
+      "cylinder": 1000,
+      "kms": 200000,
+      "brand": "Mercedes"
+    },
+    {
+      "id": "AH-31-BB",
+      "clientId": "124",
+      "type": "Gasoleo",
+      "power": 300,
+      "cylinder": 2000,
+      "kms": 120000,
+      "brand": "Fiat"
+    },
+    {
+      "id": "AH-32-44",
+      "clientId": "123",
+      "type": "Eletrico",
+      "power": 250,
+      "kms": 20000,
+      "brand": "Opel"
+    },
+    {
+      "id": "AH-21-25",
+      "clientId": "125",
+      "type": "Hibrido",
+      "cylinder": 1000,
+      "power": 200,
+      "kms": 80000,
+      "brand": "Renault"
+    }
+  ],
+  "shcedule": [
+    {
+      "id": "s01",
+      "vehicleId": "08-25-AA",
+      "servicedefinitionId": "sp",
+      "state": "Realizado",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "Purus venenatis cras magnis placerat eget nulla curae himenaeos mus class tincidunt vitae lectus non natoque finibus fringilla potenti proin vulputate aliquam facilisis eros netus vestibulum ullamcorper pede dictumst dis metus auctor enim accumsan nullam posuere leo a mauris ultrices consectetuer elit.",
+      "mechanical": "a100",
+      "conclusion": "21:34h 3/3/2024",
+      "report": "Esta tarefa foi concluída sem qualquer problema. ",
+      "additionalServices": [
+        "sp",
+        "sct",
+        "sb",
+        "li"
+      ]
+    },
+    {
+      "id": "s02",
+      "vehicleId": "AH-31-BB",
+      "servicedefinitionId": "cr",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "09:15h 03/05/2024",
+      "description": "Scelerisque porta non ipsum venenatis est habitasse sed pretium viverra interdum congue risus libero aptent mi platea turpis sollicitudin semper pharetra fermentum ultricies praesent augue velit dui rutrum ante fusce leo curabitur mollis inceptos duis litora magnis sit tempor gravida pulvinar dictumst.",
+      "mechanical": "a101"
+    },
+    {
+      "id": "s03",
+      "vehicleId": "AH-32-44",
+      "servicedefinitionId": "ad",
+      "state": "Realizado",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "Metus congue facilisi cubilia faucibus porta litora mauris vivamus quis diam consectetur sociosqu velit lorem ligula gravida sodales tempus habitasse scelerisque curabitur mus ornare ad augue bibendum commodo vestibulum sed magna mollis conubia eget eros neque posuere pulvinar integer urna purus potenti.",
+      "mechanical": "a102",
+      "conclusion": "21:46h 3/3/2024",
+      "report": "Tarefa realizada com sucesso!",
+      "additionalServices": []
+    },
+    {
+      "id": "s04",
+      "vehicleId": "AH-21-25",
+      "servicedefinitionId": "sct",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "09:25h 04/06/2024",
+      "description": "Torquent placerat id tincidunt in viverra commodo netus iaculis laoreet et dui phasellus rhoncus a montes velit ultricies at molestie ligula sapien dictum fringilla bibendum sociosqu magnis gravida lacinia himenaeos pellentesque ut scelerisque turpis dapibus letius pretium faucibus vestibulum elementum sodales lectus.",
+      "mechanical": "a100"
+    },
+    {
+      "id": "s05",
+      "vehicleId": "08-25-AA",
+      "servicedefinitionId": "mot",
+      "state": "Realizado",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "Dictum ultrices massa ultricies posuere elit habitant suscipit aenean ut luctus vitae class semper sociosqu vestibulum urna quis sollicitudin elementum si egestas nostra turpis fringilla libero ex tempus volutpat in suspendisse imperdiet bibendum erat sit lobortis nulla id augue faucibus odio mauris.",
+      "mechanical": "a101",
+      "conclusion": "21:37h 3/3/2024",
+      "report": "Tarefa realizada com sucesso!",
+      "additionalServices": [
+        "sfo",
+        "sfc"
+      ]
+    },
+    {
+      "id": "s06",
+      "vehicleId": "AH-31-BB",
+      "servicedefinitionId": "li",
+      "state": "Realizado",
+      "scheduling": "programado",
+      "date": "10:20h 11/06/2024",
+      "description": "Dictum ultrices massa ultricies posuere elit habitant suscipit aenean ut luctus vitae class semper sociosqu vestibulum urna quis sollicitudin elementum si egestas nostra turpis fringilla libero ex tempus volutpat in suspendisse imperdiet bibendum erat sit lobortis nulla id augue faucibus odio mauris",
+      "mechanical": "a102",
+      "conclusion": "23:29h 3/3/2024",
+      "report": "",
+      "additionalServices": [
+        "sp",
+        "mot"
+      ]
+    },
+    {
+      "id": "s07",
+      "vehicleId": "AH-32-44",
+      "servicedefinitionId": "le",
+      "state": "Em espera",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "Si auctor aliquam nostra bibendum litora accumsan sed efficitur hac montes faucibus nullam laoreet duis tellus vel mus convallis vulputate ac vitae gravida porttitor diam rhoncus erat per dictumst proin neque primis blandit tempor sagittis conubia congue mauris ex tincidunt nam nisl",
+      "mechanical": "a100"
+    },
+    {
+      "id": "s08",
+      "vehicleId": "AH-21-25",
+      "servicedefinitionId": "sfah",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "11:15h 01/07/2024",
+      "description": "Auctor vulputate odio vitae laoreet hac class inceptos consequat primis nulla ante volutpat ornare himenaeos vehicula sapien maecenas consectetuer habitasse suscipit arcu parturient nullam blandit sociosqu taciti massa euismod bibendum luctus mattis cursus ligula fusce ridiculus amet convallis curae platea lacus accumsan",
+      "mechanical": "a101"
+    },
+    {
+      "id": "s09",
+      "vehicleId": "08-25-AA",
+      "servicedefinitionId": "mom",
+      "state": "Realizado",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "At diam mattis orci magnis taciti praesent et maecenas litora ligula sapien felis velit consectetur ac lobortis donec congue est parturient mollis rhoncus pharetra fringilla facilisis purus ultricies nam sit placerat tincidunt malesuada massa penatibus letius egestas consequat enim faucibus feugiat senectus",
+      "mechanical": "a102",
+      "conclusion": "21:40h 3/3/2024",
+      "report": "Penso que o veículo não se encontra nas melhores condições, vou fazer umas recomendações ao senhor João.",
+      "additionalServices": []
+    },
+    {
+      "id": "s10",
+      "vehicleId": "AH-31-BB",
+      "servicedefinitionId": "sfo",
+      "state": "Realizado",
+      "scheduling": "programado",
+      "date": "13:10h 12/07/2024",
+      "description": "Platea vehicula nulla vitae parturient conubia si tellus pharetra sit tempor scelerisque turpis urna cursus inceptos per ut lacinia curabitur magna dictumst auctor a enim netus placerat viverra congue sed nunc eget blandit litora risus id efficitur volutpat dui libero lobortis condimentum",
+      "mechanical": "a100",
+      "conclusion": "22:11h 3/3/2024",
+      "report": "O filtro do ar também apresenta alguns problemas.",
+      "additionalServices": [
+        "sfam"
+      ]
+    },
+    {
+      "id": "s11",
+      "vehicleId": "AH-32-44",
+      "servicedefinitionId": "sfc",
+      "state": "Em espera",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "Augue placerat nec ornare cras eleifend at nunc tellus egestas fringilla tristique sem ultrices penatibus tempor faucibus eu inceptos justo proin amet ultricies semper ad habitasse dictum consectetur diam nascetur pulvinar condimentum suspendisse primis phasellus rutrum convallis et orci eget dictumst cubilia",
+      "mechanical": "a101"
+    },
+    {
+      "id": "s12",
+      "vehicleId": "AH-21-25",
+      "servicedefinitionId": "sfam",
+      "state": "A realizar",
+      "scheduling": "programado",
+      "date": "13:35h 13/08/2024",
+      "description": "Tincidunt placerat non class semper vehicula vitae volutpat ad eleifend lectus phasellus tempus tortor duis congue lorem convallis si cubilia facilisis praesent maximus potenti dictumst nunc ex dis morbi euismod ac nisl justo luctus mauris ante amet pede habitant venenatis imperdiet purus",
+      "mechanical": "a102",
+      "conclusion": "ND",
+      "report": "",
+      "additionalServices": []
+    },
+    {
+      "id": "s13",
+      "vehicleId": "08-25-AA",
+      "servicedefinitionId": "scc",
+      "state": "Em espera",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "At scelerisque viverra dictumst sodales letius vulputate fermentum venenatis ut magna habitasse neque diam consectetur tellus posuere libero ullamcorper ultricies tristique justo mattis taciti cubilia sed finibus ultrices convallis proin rutrum inceptos tempor phasellus id curae efficitur nunc molestie hendrerit ante facilisis",
+      "mechanical": "a100"
+    },
+    {
+      "id": "s14",
+      "vehicleId": "AH-31-BB",
+      "servicedefinitionId": "sba",
+      "mechanical": "a101",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "14:55h 05/09/2024",
+      "description": "Eros sollicitudin parturient odio semper curabitur ultricies per phasellus porttitor quam scelerisque sagittis dis pede ut pharetra placerat ornare sapien lorem enim class commodo nostra ad iaculis condimentum praesent in nisi libero ligula vestibulum mattis nisl facilisi aliquam egestas adipiscing curae ac"
+    },
+    {
+      "id": "s15",
+      "vehicleId": "AH-32-44",
+      "servicedefinitionId": "svi",
+      "state": "Suspendida",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "Elit praesent vulputate nisi ac auctor habitant sit rhoncus phasellus lacinia nunc hendrerit nascetur aliquet ante pulvinar ornare porta turpis per habitasse tristique aptent vehicula commodo dolor proin taciti sapien sollicitudin molestie augue eros tincidunt ultrices nostra sed ultricies quam odio neque",
+      "mechanical": "a102",
+      "conclusion": "ND",
+      "report": "",
+      "additionalServices": []
+    },
+    {
+      "id": "s16",
+      "vehicleId": "AH-21-25",
+      "servicedefinitionId": "sfp",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "15:15h 17/10/2024",
+      "description": "Tincidunt vivamus lobortis id ad viverra sit dapibus risus et aptent gravida dolor lorem metus tellus turpis per maximus cubilia class facilisi dictumst ultrices ornare nisi torquent vitae sollicitudin leo eros lacinia conubia tempus netus morbi fames potenti laoreet nec duis consequat",
+      "mechanical": "a100"
+    },
+    {
+      "id": "s17",
+      "vehicleId": "08-25-AA",
+      "servicedefinitionId": "rfp",
+      "mechanical": "a101",
+      "state": "Em espera",
+      "scheduling": "filaDeEspera",
+      "description": "Faucibus vestibulum leo elit vehicula porta integer proin sit accumsan lorem blandit placerat maecenas efficitur quam torquent iaculis phasellus ipsum fames porttitor consectetur libero dapibus posuere nunc sed nostra lacus amet ultricies purus lobortis primis erat tristique pulvinar mus per tempus justo"
+    },
+    {
+      "id": "s18",
+      "vehicleId": "AH-31-BB",
+      "servicedefinitionId": "sva",
+      "mechanical": "a102",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "14:15h 26/02/2024",
+      "description": "Ridiculus maecenas rutrum justo tempus molestie vel curae aliquam rhoncus adipiscing etiam pretium himenaeos torquent amet enim per sapien nam praesent malesuada risus facilisi eros maximus dignissim mus aptent sagittis hac turpis tellus venenatis phasellus elementum ad vehicula montes iaculis habitant eu"
+    },
+    {
+      "id": "s19",
+      "vehicleId": "AH-32-44",
+      "servicedefinitionId": "adb",
+      "state": "Em espera",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "Senectus ipsum tristique ultrices integer urna sociosqu scelerisque erat enim et metus ligula semper turpis porttitor vel ac tincidunt massa consequat felis cubilia platea commodo dignissim magna egestas suspendisse habitasse consectetur inceptos torquent quam ex elementum ante dui in mauris sem aliquet",
+      "mechanical": "a100"
+    },
+    {
+      "id": "s20",
+      "vehicleId": "AH-21-25",
+      "servicedefinitionId": "sb",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "15:50h 31/10/2024",
+      "description": "Lacus augue faucibus fermentum habitasse mi himenaeos laoreet suspendisse pharetra egestas nostra eu id tempus ligula tortor felis facilisi dis molestie in risus nisl aenean si nam imperdiet vestibulum sem viverra purus pede amet consectetur malesuada quisque libero praesent ornare rhoncus ut",
+      "mechanical": "a101"
+    },
+    {
+      "id": "s21",
+      "vehicleId": "08-25-AA",
+      "servicedefinitionId": "le",
+      "state": "Realizado",
+      "scheduling": "filaDeEspera",
+      "date": "Sem prazo",
+      "description": "Donec mollis faucibus hac morbi ligula semper dis interdum dictumst orci at duis non dui tristique curabitur quisque eget sapien himenaeos potenti sociosqu maecenas parturient consectetuer purus consectetur ante volutpat augue nostra efficitur sit lacinia posuere congue nec quam phasellus amet vitae",
+      "mechanical": "a102",
+      "conclusion": "21:43h 3/3/2024",
+      "report": "Tarefa realizada com sucesso!",
+      "additionalServices": [
+        "sva"
+      ]
+    },
+    {
+      "id": "s22",
+      "vehicleId": "AH-31-BB",
+      "servicedefinitionId": "sfo",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "16:20h 08/11/2024",
+      "description": "Vivamus per aptent et orci viverra nascetur sapien mi aenean massa conubia duis imperdiet ipsum mauris hendrerit pellentesque eros habitant finibus velit facilisi scelerisque egestas aliquet turpis platea nibh id bibendum a lacus neque felis maecenas laoreet curae suscipit cursus consectetur sit",
+      "mechanical": "a100"
+    },
+    {
+      "id": "s23",
+      "vehicleId": "AH-32-44",
+      "servicedefinitionId": "cr",
+      "mechanical": "a101",
+      "state": "Em espera",
+      "scheduling": "filaDeEspera",
+      "description": "Quisque sodales pellentesque velit mauris nullam tellus eros urna ultricies sagittis inceptos mollis pulvinar lectus torquent nisi accumsan nunc ornare nulla proin egestas fusce arcu platea tempus pede venenatis magna mattis habitasse nibh facilisis erat in augue et semper quam lacinia congue"
+    },
+    {
+      "id": "s24",
+      "vehicleId": "AH-21-25",
+      "servicedefinitionId": "mom",
+      "mechanical": "a102",
+      "state": "Programado",
+      "scheduling": "programado",
+      "date": "16:50h 05/12/2024",
+      "description": "Semper ligula duis venenatis imperdiet vitae vivamus pharetra vulputate est ornare aenean iaculis lectus eget interdum viverra facilisi suscipit adipiscing donec egestas eleifend litora aptent penatibus vestibulum malesuada in sociosqu hendrerit amet tristique cras justo mauris quisque quam cubilia ut laoreet fringilla"
+    }
+  ],
+  "mechanicals": [
+    {
+      "id": "a100",
+      "name": "Matias Cardoso",
+      "email": "matias@gmail.com",
+      "post": "Posto Elétrico",
+      "specialty": "Eletricista",
+      "password": "5555",
+      "photo": "assets/mecanicos/matias.png"
+    },
+    {
+      "id": "a101",
+      "name": "Pedro Silva",
+      "email": "pedro@hotmail.com",
+      "post": "Posto Geral",
+      "specialty": "Eletricista",
+      "password": "6666",
+      "photo": "assets/mecanicos/pedro.png"
+    },
+    {
+      "id": "a102",
+      "name": "Marco Costa",
+      "email": "marco@outlook.com",
+      "post": "Posto Híbrido",
+      "specialty": "Chapeiro",
+      "password": "1111",
+      "photo": "assets/meca/diogo.jpeg"
+    }
+  ]
+}
